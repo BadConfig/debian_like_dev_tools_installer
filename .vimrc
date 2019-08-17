@@ -47,11 +47,6 @@ set winheight=20
 "file encoding
 set fileencoding=utf-8
 
-"Gruvbox
-let g:gruvbox_italic=1
-colorscheme gruvbox
-set background=dark
-
 "NERD TRee
 map <C-n> :NERDTreeToggle<CR>
 " Немного магии, если мы запустим Vim без указания файла для редактирования,
@@ -79,3 +74,6 @@ let g:UltiSnipsEditSplit="vertical"
 
 "YCM
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+"Gruvbox
+let g:gruvbox_italic=1
+set background=dark

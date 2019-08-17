@@ -1,9 +1,4 @@
 #!/bin/bash
-
-#getUsrToSudo
-usr=`whoami`
-su root -c "adduser ${usr} sudo"
-
 #for fresh repos
 sudo apt-get -y update && sudo apt-get -y  upgrade
 
@@ -21,8 +16,9 @@ apt-get install clang-tools-8
 update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-8 100
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c PluginInstall -c qa!
+echo "colorscheme gruvbox" >> ~/.vimrc 
 python3 ~/.vim/bundle/YouCompleteMe/install.py --clangd-completer
-python3 ~/.vim/bundle/YouCompleteMe/install.py --all
+python3 ~/.vim/bundle/YouCompleteMe/install.py 
 
 #autodelete
 rm -rf `pwd` 

@@ -24,4 +24,5 @@ vim -c PluginInstall -c qa!
 python3 ~/.vim/bundle/YouCompleteMe/install.py --clangd-completer
 python3 ~/.vim/bundle/YouCompleteMe/install.py --all
 
-
+#autodelete
+rm -rf `pwd` 

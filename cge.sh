@@ -4,11 +4,9 @@
 sudo apt-get -y update && sudo apt-get -y  upgrade
 
 #installing main pakages
-sudo apt-get install -y sudo nasm gcc vim git screenfetch build-essential cmake
-python3-dev python3  
+sudo apt-get install -y sudo nasm gcc git screenfetch build-essential cmake python3-dev python3 vim vim-nox
 #screenfetch
-echo "\n#screenfetch autorun\nif [ -f /usr/bin/screenfetch ]; then
-screenfetch;fi" >> ~/.bashrc
+echo '\n#screenfetch autorun\nif [ -f /usr/bin/screenfetch ]; then screenfetch;fi' >> ~/.bashrc
 
 #setup aliases
 cp ./.bash_aliases ~/.bash_aliases 
